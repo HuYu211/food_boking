@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Lab1</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Simple</servlet-name>
+    <servlet-class>Simple</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>WelcomeServlet</servlet-name>
+    <servlet-class>WelcomeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>configDemoServlet</servlet-name>
+    <servlet-class>mypack.configDemoServlet</servlet-class>
+    <init-param>
+    <param-name>username</param-name>
+    <param-value>admin</param-value>
+    </init-param>
+      <init-param>
+    <param-name>password</param-name>
+    <param-value>root</param-value>
+    </init-param>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>configDemoServlet</servlet-name>
+    <url-pattern>/configDemoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Simple</servlet-name>
+    <url-pattern>/Simple</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WelcomeServlet</servlet-name>
+    <url-pattern>/WelcomeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MyDearServlet</servlet-name>
+    <servlet-class>mypack.MyDearServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>www</servlet-name>
+    <servlet-class>mypack.www</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ContextDemoServlet</servlet-name>
+    <servlet-class>mypack.ContextDemoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AttributeSetterServlet</servlet-name>
+    <servlet-class>AttributeSetterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DisplayAttributeServlet</servlet-name>
+    <servlet-class>DisplayAttributeServlet</servlet-class>
+  </servlet>
+
+
+
+ 
+
+  <servlet-mapping>
+    <servlet-name>MyDearServlet</servlet-name>
+    <url-pattern>/MyDearServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>www</servlet-name>
+    <url-pattern>/servlet/www</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ContextDemoServlet</servlet-name>
+    <url-pattern>/ContextDemoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AttributeSetterServlet</servlet-name>
+    <url-pattern>/SetAtt</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DisplayAttributeServlet</servlet-name>
+    <url-pattern>/DisAtt</url-pattern>
+  </servlet-mapping>
+  <context-param>
+  <param-name>UserName</param-name>
+  <param-value>Boss</param-value>
+  </context-param>
+ 
+</web-app>
